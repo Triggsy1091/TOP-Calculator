@@ -19,6 +19,8 @@
 
   --bg-clr-calc: #8cbca4;
   --bg-clr-calc-display: #e0e0e0;
+  --bg-body: #6a6b83;
+
   --clr-button: #878a89;
 }
 
@@ -28,6 +30,7 @@ body {
   align-items: center;
   height: 100vh;
   font-size: var(--fs-400);
+  background-color: var(--bg-body);
 }
 
 .calculator {
