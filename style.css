@@ -15,8 +15,11 @@
   --ff-main: "Digital-7 Regular";
   --fs-400: 2.5rem;
 
+  --clr-text: #fff;
+
   --bg-clr-calc: #8cbca4;
-  --clr-main: #878a89;
+  --bg-clr-calc-display: #e0e0e0;
+  --clr-button: #878a89;
 }
 
 body {
@@ -41,7 +44,7 @@ body {
   width: 90%;
   height: 5rem;
   position: absolute;
-  background-color: #e0e0e0;
+  background-color: var(--bg-clr-calc-display);
   left: 20px;
   top: 25px;
   border-radius: 10px;
@@ -64,8 +67,8 @@ body {
 .calculator-button {
   border-radius: 10px;
   font-size: inherit;
-  background-color: var(--clr-main);
-  color: white;
+  background-color: var(--clr-button);
+  color: var(--clr-text);
 }
 
 .col-span-2 {
