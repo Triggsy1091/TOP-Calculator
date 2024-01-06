@@ -1,3 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Digital-7 Regular";
+  src: url(/fonts/digital-7.regular.ttf);
+}
+
+:root {
+  --ff-main: "Digital-7 Regular";
+  --fs-400: 2.5rem;
+
+  --bg-clr-calc: #8cbca4;
+  --clr-main: #878a89;
+}
+
 body {
-    color: steelblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: var(--fs-400);
+}
+
+.calculator {
+  font-family: var(--ff-main);
+  min-width: 400px;
+  min-height: 550px;
+  border: solid black 2px;
+  background-color: var(--bg-clr-calc);
+  border-radius: 25px;
+  position: relative;
+}
+
+.display {
+  width: 90%;
+  height: 5rem;
+  position: absolute;
+  background-color: #e0e0e0;
+  left: 20px;
+  top: 25px;
+  border-radius: 10px;
+  line-height: 0.85;
+  text-align: end;
+  padding-right: 0.5rem;
+}
+
+.grid-layout {
+  position: absolute;
+  width: 90%;
+  left: 20px;
+  top: 125px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.calculator-button {
+  border-radius: 10px;
+  font-size: inherit;
+  background-color: var(--clr-main);
+  color: white;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.row-span-2 {
+  grid-column: 4 / 5;
+  grid-row: span 2;
+  height: 10rem;
 }
