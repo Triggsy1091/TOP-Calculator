@@ -19,7 +19,7 @@
 
   --bg-clr-calc: #8cbca4;
   --bg-clr-calc-display: #e0e0e0;
-  --bg-body: #6a6b83;
+  --bg-body: #ffc8dd;
 
   --clr-button: #878a89;
 }
@@ -82,4 +82,9 @@ body {
   grid-column: 4 / 5;
   grid-row: span 2;
   height: 10rem;
+}
+
+.top-display {
+  width: 100%;
+  height: 20px;
 }
